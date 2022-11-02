@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import 'package:provider_listview/service/tasklist.dart';
 
+import 'page/updatetask.dart';
 import 'page/addtask.dart';
 import 'page/listpage.dart';
 
@@ -24,13 +26,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => const MyListPage(),
         "/addTask": (context) => const AddTaskPage(),
+        "/updateTask": (context) => const UpdateTaskPage(),
       },
       initialRoute: "/",
       title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
