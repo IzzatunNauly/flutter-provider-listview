@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
       },
       initialRoute: "/",
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
